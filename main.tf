@@ -5,10 +5,10 @@ provider "intersight" {
 }
 
 module "terraform-intersight-iks" {
-  source = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
+  #vsource = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
   # source = "terraform-cisco-modules/iks/intersight//"
   # Infra Config Policy Information
-  # source = "ciscodevnet/iks/intersight//"
+  source = "ciscodevnet/iks/intersight//"
   cluster_name = "tn"
   cluster_action = "Deploy"
   vc_target_name   = "10.88.166.174"
