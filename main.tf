@@ -8,7 +8,7 @@ module "terraform-intersight-iks" {
   #vsource = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
   # source = "terraform-cisco-modules/iks/intersight//"
   # Infra Config Policy Information
-  source = "terraform-cisco-modules/iks/intersight//"
+  source = "terraform-cisco-modules/iks/intersight//modules/terraform-intersight-iks/"
   cluster_name = "cluster"
   cluster_action = "Deploy"
   vc_target_name   = "10.88.166.174"
